@@ -15,17 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.http import HttpResponse
 
-# method view
-def index(request):
-    return HttpResponse("Hello World")
-
-def about(request):
-    return HttpResponse("This is About page")
+from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^about/$', about),
-    url(r'^$', index),
+    url(r'^about/$', views.about),
+    url(r'^$', views.index),
 ]
