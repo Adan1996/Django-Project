@@ -1,11 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # method view
 def index(request):
-
-    str_output = "<h1>Ini adalah halaman Home</h1>"
-
-    return HttpResponse(str_output)
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("This is About page")
+    return render(request, 'about.html')
