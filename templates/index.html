@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website | Django Project</title>
+    <title>{{ judul }}</title>
 </head>
 
 <body>
-    <h1>Selamat datang di website kami</h1>
+    <h1>{{ content }}</h1>
     <p>ini adalah halaman index</p>
 
-    <a href="/about">about</a>
-    <a href="/blog">blog</a>
-
+    <ul>
+        <li><a href="/about">about</a></li>
+        <li><a href="/blog">blog</a></li>
+    </ul>
 </body>
 
 </html>

@@ -1,5 +1,11 @@
 from django.shortcuts import render
 
 # Create your views here.
+
+
 def index(request):
-    return render(request, 'about.html')
+    context = {
+        'judul': 'About',
+        'content': 'This is About page'
+    }
+    return render(request, 'about.html', context)
