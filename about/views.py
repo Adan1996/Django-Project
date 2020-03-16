@@ -9,4 +9,4 @@ def index(request):
         'content': 'This is About page',
         'banner': 'about/img/banner_about.png'
     }
-    return render(request, 'about/index.html', context)
+    return render(request, 'index.html', context)

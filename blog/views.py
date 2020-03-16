@@ -9,7 +9,7 @@ def index(request):
         'content': 'This blog has been created from blog folder',
         'banner': 'blog/img/banner_blog.png'
     }
-    return render(request, 'blog/index.html', context)
+    return render(request, 'index.html', context)
 
 
 def cerita(request):
@@ -17,4 +17,4 @@ def cerita(request):
         'judul': 'Story',
         'content': 'Page of story has been created'
     }
-    return render(request, 'blog/index.html', context)
+    return render(request, 'index.html', context)
