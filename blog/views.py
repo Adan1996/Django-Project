@@ -7,7 +7,8 @@ def index(request):
     context = {
         'judul': 'Blog Page',
         'content': 'This blog has been created from blog folder',
-        'banner': 'blog/img/banner_blog.png'
+        'banner': 'blog/img/banner_blog.png',
+        'app_css': 'blog/css/styles.css'
     }
     return render(request, 'index.html', context)
 
