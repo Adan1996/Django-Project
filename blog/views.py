@@ -6,7 +6,8 @@ from django.shortcuts import render
 def index(request):
     context = {
         'judul': 'Blog Page',
-        'content': 'This blog has been created from blog folder'
+        'content': 'This blog has been created from blog folder',
+        'banner': 'blog/img/banner_blog.png'
     }
     return render(request, 'blog/index.html', context)
 

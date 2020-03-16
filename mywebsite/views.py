@@ -6,6 +6,7 @@ from django.shortcuts import render
 def index(request):
     context = {
         'judul': 'Home',
-        'content': 'Welcome to my website'
+        'content': 'Welcome to my website',
+        'banner': 'img/banner_home.png'
     }
     return render(request, 'index.html', context)
