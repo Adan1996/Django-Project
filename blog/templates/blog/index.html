@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 
 <head>
@@ -8,11 +9,12 @@
 </head>
 
 <body>
-
+    <img style="width: 100%;" src="{% static 'blog/img/banner_blog.png' %}" alt="">
     <h1>{{ content }}</h1>
     <ul>
         <li><a href="/">home</a></li>
         <li><a href="/about">about</a></li>
+        <li><a href="/blog">blog</a></li>
         <ul>
             <li><a href="/blog/cerita/">cerita</a></li>
         </ul>

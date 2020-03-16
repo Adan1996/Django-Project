@@ -8,4 +8,4 @@ def index(request):
         'judul': 'About',
         'content': 'This is About page'
     }
-    return render(request, 'about.html', context)
+    return render(request, 'about/index.html', context)

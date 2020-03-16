@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 
 <head>
@@ -8,10 +9,11 @@
 </head>
 
 <body>
+    <img style="width: 100%;" src="{% static 'img/banner_home.png' %}" alt="">
     <h1>{{ content }}</h1>
-    <p>ini adalah halaman index</p>
 
     <ul>
+        <li><a href="/">home</a></li>
         <li><a href="/about">about</a></li>
         <li><a href="/blog">blog</a></li>
     </ul>
