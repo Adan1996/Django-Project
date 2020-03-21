@@ -1,3 +1,6 @@
-h1 {
-    color: #06f;
+.jumbotron {
+    background-image: url("/static/blog/img/banner_blog.png");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
 }

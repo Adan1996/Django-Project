@@ -1,25 +1,26 @@
+{% extends "base.html" %}
 {% load static %}
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ judul }}</title>
-</head>
+{% block app_css %}
+<!-- my css -->
+<!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+<!-- <link rel="stylesheet" href="{% static app_css %}"> -->
+<link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+{% endblock app_css %}
 
-<body>
-    <img style="width: 100%;" src="{% static banner %}" alt="">
-    <h1>{{ content }}</h1>
-    <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/about">about</a></li>
-        <li><a href="/blog">blog</a></li>
-        <ul>
-            <li><a href="/blog/cerita/">cerita</a></li>
-        </ul>
-    </ul>
+{% block header %}
+<h1 class="text-left" style="margin-top: 100px;">{{ judul }}</h1>
+<p class="lead text-left">{{ content }}</p>
+{% endblock header %}
 
-</body>
+{% block content-1 %}
+<div class="row" style="height: 400px;">
+    <h1>write your content1 here</h1>
+</div>
+{% endblock content-1 %}
 
-</html>
+{% block content-2 %}
+<div class="row bg-info" style="height: 400px;">
+    <h1>write your content2 here</h1>
+</div>
+{% endblock content-2 %}

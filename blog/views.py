@@ -10,7 +10,7 @@ def index(request):
         'banner': 'blog/img/banner_blog.png',
         'app_css': 'blog/css/styles.css'
     }
-    return render(request, 'index.html', context)
+    return render(request, 'blog/index.html', context)
 
 
 def cerita(request):

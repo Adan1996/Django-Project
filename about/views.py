@@ -10,4 +10,4 @@ def index(request):
         'banner': 'about/img/banner_about.png',
         'app_css': 'about/css/styles.css'
     }
-    return render(request, 'index.html', context)
+    return render(request, 'about/index.html', context)
