@@ -15,7 +15,10 @@
 
 {% block content-1 %}
 <div class="row" style="height: 400px;">
-    <h1>write your content1 here</h1>
+    {% for post in Posts %}
+    <h1>{{ post.title }}</h1>
+    <h3>{{ post.body }}</h3>
+    {% endfor %}
 </div>
 {% endblock content-1 %}
 
