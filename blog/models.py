@@ -6,6 +6,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     body = models.TextField()
     category = models.CharField(max_length=255)
+    waktu_posting = models.DateTimeField(auto_now_add=True)
     # pembahasan
     # Post.objects.create(id="value")
     # Post.objects.all()

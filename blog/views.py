@@ -13,14 +13,49 @@ def index(request):
         'content': 'This blog has been created from blog folder',
         'banner': 'blog/img/banner_blog.png',
         'app_css': 'blog/css/styles.css',
+        'Category': 'All',
         'Posts': posts
     }
     return render(request, 'blog/index.html', context)
 
+def jurnal(request):
+    # queryset
+    posts = Post.objects.filter(category='jurnal')
 
-# def cerita(request):
-#     context = {
-#         'judul': 'Story',
-#         'content': 'Page of story has been created'
-#     }
-#     return render(request, 'index.html', context)
+    context = {
+        'judul': 'Blog Page',
+        'content': 'This blog has been created from blog folder',
+        'banner': 'blog/img/banner_blog.png',
+        'app_css': 'blog/css/styles.css',
+        'Category': 'Jurnal',
+        'Posts': posts
+    }
+    return render(request, 'blog/index.html', context)
+
+def berita(request):
+    # queryset
+    posts = Post.objects.filter(category='berita')
+
+    context = {
+        'judul': 'Blog Page',
+        'content': 'This blog has been created from blog folder',
+        'banner': 'blog/img/banner_blog.png',
+        'app_css': 'blog/css/styles.css',
+        'Category': 'Berita',
+        'Posts': posts
+    }
+    return render(request, 'blog/index.html', context)
+
+def gosip(request):
+    # queryset
+    posts = Post.objects.filter(category='gosip')
+
+    context = {
+        'judul': 'Blog Page',
+        'content': 'This blog has been created from blog folder',
+        'banner': 'blog/img/banner_blog.png',
+        'app_css': 'blog/css/styles.css',
+        'Category': 'Gosip',
+        'Posts': posts
+    }
+    return render(request, 'blog/index.html', context)

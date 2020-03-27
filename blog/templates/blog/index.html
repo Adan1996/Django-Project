@@ -14,12 +14,14 @@
 {% endblock header %}
 
 {% block content-1 %}
-<div class="row" style="height: 400px;">
-    {% for post in Posts %}
+{% for post in Posts %}
+<div class="row" style="height: 100px;">
     <h1>{{ post.title }}</h1>
-    <h3>{{ post.body }}</h3>
-    {% endfor %}
+    <p>{{ post.body }}</p>
+    <p>{{ post.category }}</p>
+    <p>{{ post.waktu_posting }}</p>
 </div>
+{% endfor %}
 {% endblock content-1 %}
 
 {% block content-2 %}
